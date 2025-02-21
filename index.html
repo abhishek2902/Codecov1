@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecov</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://your-font-provider.com/sailec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav begins -->
+     <div class="na">
+    <nav class="navigation">
+        <a class="logo logoimg" href="/index.html"><img src="/public/logo/logo2.jpeg" alt=""></a>
+        <div class="navlist">
+            <!-- <div class="navlinks"> -->
+                <a href="/product.html">Products</a>
+                <a href="">Customers</a>
+                <a href="">Blog</a>
+                <a href="">Help</a>
+            <!-- </div> -->
+            <div class="navbtn">
+                <button id="navlogin">Login</button>
+                <button id="navget" onclick="window.location.href='/getstarted.html'">Get Started</button>
+            </div>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <div class="navi">
+        <div class="closebtn"><i class="fa-solid fa-xmark"></i></div>
+        <a href="/product.html">Products</a>
+        <div class="navi-border"></div>
+        <a href="">Customers</a>
+        <div class="navi-border"></div>
+        <a href="">Blog</a>
+        <div class="navi-border"></div>
+        <a href="">Help</a>
+        <div class="navi-border"></div>
+        <a href="">Pricing</a>
+        <div class="navi-border"></div>
+        <a href="/login.html">Login</a>
+        <div class="navi-border"></div>
+        <a href="/getstarted.html">Get Started</a>
+    </div>
+    </div>
+    <!-- nav ends -->
+
+
+
+    <!-- hero starts -->
+    <div class="her">
+        <section class="hero">
+            <div class="herocontvid">
+                <div class="herocontent">
+                    <h2>CoverCode:Beyond Coverage, Into Excellence.</h2>
+                    <p>Leading organizations worldwide place their trust in CoverCode for premier code quality tools and comprehensive reporting. Elevate your code quality and optimize your CI workflow with advanced code coverage insights, precise detection of flaky and failing tests, in-depth performance impact analysis, and a suite of powerful features designed to enhance efficiency and reliability.</p>
+                    <div class="herobtn">
+                        <button class="trybtn" onclick="window.location.href='/getstarted.html'">Try free</button>
+                        <button class="getdemobtn"  onclick="window.location.href='/getstarted.html'">Get Demo</button>
+                    </div>
+                </div>
+                <div class="herovideo">
+                    <div class="floating-image-container">
+                        <img src="/public/images/hero2.png" class="floating-image" alt="Floating Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            </defs>
+            <g class="wave1">
+                <use xlink:href="#wave-path" x="50" y="3"></use>
+            </g>
+            <g class="wave2">
+                <use xlink:href="#wave-path" x="50" y="0"></use>
+            </g>
+            <g class="wave3">
+                <use xlink:href="#wave-path" x="50" y="9"></use>
+            </g>
+            <g class="wave4">
+                <use xlink:href="#wave-path" x="50" y="6"></use>
+            </g>
+        </svg> 
+    </div>
+    <!-- hero section ends -->
+
+    <section class="about">
+        <h3>Reduce debugging time | Enhance developer workflow | Prevent issues in production </h3>
+        <div class="about1">
+            <h2>Eliminate the frustration of unreliable tests</h2>
+            <div class="aboutcontentandvideo1">
+                <div class="about1video">
+                    <div class="floating-image-container code3img">
+                        <img src="/public/images/code2.png" class="floating-image" alt="Floating Image">
+                    </div>
+                </div>
+                <div class="aboutcontent">
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Identify the exact lines that failed in a pull request comment to determine which tests should be re-run or skipped.</span>
+                    </div>
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Quickly re-run flaky tests by using the test name and stack trace that can be easily copied and pasted.</span>
+                    </div>
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i><span>Monitor the performance of your test suite over time and prioritize the tests that need modification first.</span>
+                    </div>
+                    <button class="getdemobtn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="curved-designc">
+                <div class="vertical-linec"></div>
+                <div class="large-circlec"></div>
+            </div>
+        </div>
+
+        <div class="about1">
+            <h2>Ensure that only tested code is deployed to production</h2>
+            <div class="aboutcontentandvideo1 aboutcontentandvideorev">
+                
+                <div class="aboutcontent">
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Code coverage pull request comments help you efficiently assess your PR's coverage and potential risks within your workflow.</span>
+                    </div>
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Customize coverage analysis to highlight the most relevant insights for your team.</span>
+                    </div>
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i></i><span>Codecov integrates seamlessly with your tech stack, providing coverage reports for any language, CI tool, test suite, or code host.</span>
+                    </div>
+                    <button class="getdemobtn">Learn More</button>
+                </div>
+                <div class="about1video">
+                    <div class="floating-image-container code3img">
+                        <img src="/public/images/code3.png" class="floating-image" alt="Floating Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="curved-designc">
+                <div class="vertical-linec"></div>
+                <div class="large-circlec"></div>
+            </div> 
+
+        </div>
+
+        <div class="about1">
+            <h2>Manage JavaScript bundles efficiently</h2>
+            <div class="aboutcontentandvideo1">
+                <div class="about1video">
+                    <div class="floating-image-container code3img">
+                        <img src="/public/images/code4.png" class="floating-image" alt="Floating Image">
+                    </div>
+                </div>
+                <div class="aboutcontent">
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Track JavaScript bundle size and any changes directly in pull requests to maintain optimized and efficient code.</span>
+                    </div>
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Monitor size trends over time and analyze asset and module-level data to identify oversized assets quickly.</span>
+                    </div>
+                    <div class="abtcont1">
+                        <i class="fa-solid fa-jet-fighter icon1"></i>
+                        <span>Use Status Checks to enforce size limits or percentage increases, preventing problematic merges.</span>
+                    </div>
+                    <button class="getdemobtn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="curved-designc">
+                <div class="vertical-linec"></div>
+                <div class="large-circlec"></div>
+            </div> 
+
+        </div>
+
+        <div class="about1">
+            <div class="aboutcontent">
+                <h2>Ensure code quality across any tech stack</h2>
+                <p>Code coverage integrates effortlessly with most programming languages, CI tools, and code hosts.</p>
+                <br>
+            </div>
+            <div class="aboutcontentandimg1">
+                <div class="about1video code1img">
+                    <div class="floating-image-container code3img">
+                        <img src="/public/images/code5.png" class="floating-image" alt="Floating Image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="curved-design3">
+                <div class="horizontal-line3"></div>
+                <div class="large-circle3"></div>
+                <div class="horizontal-line3"></div>
+            </div> 
+
+        </div>
+
+        <div class="aboutlast">
+            <h2>"Previously, 40% of our engineering capacity was spent fixing broken issues. With Code coverage, we've reduced that to just around 10%."</h2>
+            <div class="card floating-image">
+                <div class="card-content ">
+                    <h2>Ready to get started?</h2>
+                    <p>Get Better Code Coverage Insights with us.</p>
+                    <button  onclick="window.location.href='/getstarted.html'">Try for free</button>
+                </div>
+            </div>
+        </div>     
+
+    </section>
+
+
+    <div class="beforefooter">
+        <div class="logofoot">
+            <!-- <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/codecov/codecov-circle.svg" alt="Company Logo"> -->
+            <i class="fa-solid fa-plane-departure icon2"></i>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-top">
+            <!-- <div class="logo">
+                <img src="logo.png" alt="Company Logo">
+            </div> -->
+            <div class="footer-columns">
+                <div class="column">
+                    <h3>PRODUCT</h3>
+                    <a href="#">Features</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">API</a>
+                    <a href="#">Status</a>
+                </div>
+                <div class="column">
+                    <h3>SOLUTIONS</h3>
+                    <a href="#">Open Source</a>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Startups</a>
+                    <a href="#">Education</a>
+                </div>
+                <div class="column">
+                    <h3>CUSTOMERS</h3>
+                    <a href="#">Customers</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Community</a>
+                </div>
+                <div class="column">
+                    <h3>RESOURCES</h3>
+                    <a href="#">Webinars</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="column">
+                    <h3>COMPANY</h3>
+                    <a href="#">Team</a>
+                    <a href="#">Press</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="column">
+                    <h3>CONTACT US</h3>
+                    <a href="#">Contact</a>
+                    <a href="#">Demo</a>
+                    <a href="#">Pro Support</a>
+                    <a href="#">Enterprise Support</a>
+                    <a href="#">Community Board</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="/public/logo/logofinal.png" alt="Footer Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">GDPR</a>
+                <a href="#">Data Processing Addendum</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">California Privacy Notice</a>
+            </div>
+            <p>© 2025 • SENTRY IS A REGISTERED TRADEMARK OF FUNCTIONAL SOFTWARE, INC.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navi").classList.toggle("navi-active");
+            // document.querySelector(".navbtn").classList.toggle("nav-active");
+        }
+        window.onload=function(){
+            document.querySelector(".closebtn").addEventListener("click",()=>{document.querySelector(".navi").classList.remove("navi-active");})
+            document.querySelector(".hero").addEventListener("click",()=>{document.querySelector(".navi").classList.remove("navi-active");})
+            document.querySelector(".about").addEventListener("click",()=>{document.querySelector(".navi").classList.remove("navi-active");})
+            document.querySelector(".beforefooter").addEventListener("click",()=>{document.querySelector(".navi").classList.remove("navi-active");})
+            window.addEventListener("scroll", () => {
+                document.querySelector(".navi").classList.remove("navi-active");
+            });
+        }
+
+
+
+        // let lastScrollTop = 0;
+        // const header = document.querySelector(".na");
+
+        // window.addEventListener("scroll", () => {
+        // let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        // if (scrollTop > lastScrollTop) {
+        //     // Scrolling down -> Hide header
+        //     header.classList.add("hidden");
+        // } else {
+        //     // Scrolling up -> Show header
+        //     header.classList.remove("hidden");
+        // }
+
+        // if (scrollTop <80) {
+        //     header.classList.remove("hidden");
+        // }
+        // console.log(scrollTop)
+
+        // lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
+        // });
+
+
+
+    </script>
+</body>
+</html>

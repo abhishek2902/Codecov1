@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://your-font-provider.com/sailec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- nav begins -->
+    <nav>
+        <a class="logo logoimg" href="/index.html"><img src="/public/logo/logo1.png" alt=""></a>
+        <div class="navlist">
+            <a href="/product.html">Products</a>
+            <a href="">Customers</a>
+            <a href="">Blog</a>
+            <a href="">Help</a>
+        </div>
+        <div class="navbtn">
+            <button id="navlogin">Login</button>
+            <button id="navget" onclick="window.location.href='/getstarted.html'">Get Started</button>
+        </div>
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <div class="navi">
+        <div class="closebtn"><i class="fa-solid fa-xmark"></i></div>
+        <a href="/product.html">Products</a>
+        <div class="navi-border"></div>
+        <a href="">Customers</a>
+        <div class="navi-border"></div>
+        <a href="">Blog</a>
+        <div class="navi-border"></div>
+        <a href="">Help</a>
+        <div class="navi-border"></div>
+        <a href="">Pricing</a>
+        <div class="navi-border"></div>
+        <a href="/login.html">Login</a>
+        <div class="navi-border"></div>
+        <a href="/getstarted.html">Get Started</a>
+    </div>
+    <!-- nav ends -->
+    <section class="features">
+        <h1>Features</h1>
+
+        <div class="feacont feacont2">
+            <div class="feaconttext">
+                <h2>Code Coverage</h2>
+                <p>Customizable, holistic code coverage reporting with in-workflow insights for any code language.</p>
+                <a href="" >Learn More</a>
+            </div>
+            <img src="https://about.codecov.io/wp-content/uploads/2023/12/DTSD-332_CodeCov_PatchCoverage_BlogArt-1-scaled.jpg" alt="">
+        </div>
+
+        <div class="feacont ">
+            <img src="https://about.codecov.io/wp-content/uploads/2024/11/Code-Cov-Test-Analytics-scaled.jpg" alt="">
+            <div class="feaconttext">
+                <h2>Test Analytics</h2>
+                <p>Test failure reporting and flaky test detection with detailed insights that help you merge quality code faster and improve CI performance.
+                </p>
+                <a href="" >Learn More</a>
+            </div>            
+        </div>
+
+
+        <div class="feacont feacont2">
+            <div class="feaconttext">
+                <h2>Bundle Analysis</h2>
+                <p>Prevent oversized JavaScript bundles from merging and impacting site performance. Get alerts in your PR and track bundle size changes over time.</p>
+                <a href="" >Learn More</a>
+            </div>
+            <img src="https://about.codecov.io/wp-content/uploads/2024/11/bundle-size-matters-hero-scaled-1.jpg" alt="">
+        </div>
+
+
+
+        <div class="feacont">
+            <img src="https://about.codecov.io/wp-content/uploads/2023/03/codecov_plus_sentry.webp" alt="">
+            <div class="feaconttext">
+                <h2>Codecov + Sentry</h2>
+                <p>Codecov’s Sentry integration provides test coverage data directly to Sentry’s stack trace, giving development teams actionable insights on where to fix regressions and where test coverage could prevent them, all without leaving their workflow.</p>
+                <a href="" >Learn More</a>
+            </div>            
+        </div>
+
+
+
+        <div class="feacont feacont2">
+            <div class="feaconttext">
+                <h2>Source Code Coverage</h2>
+                <p>Customizable, holistic code coverage reporting with in-workflow insights for any code language.</p>
+                <a href="" >Learn More</a>
+            </div>
+            <img src="https://about.codecov.io/wp-content/uploads/2020/10/Source-Code-Coverage-1.png" alt="">
+        </div>
+
+
+
+
+        <div class="feacont">
+            <img src="https://about.codecov.io/wp-content/uploads/2020/10/Status-Checks-1.png" alt="">
+            <div class="feaconttext">
+                <h2>Status Checks</h2>
+                <p>Block underperforming pull requests from being merged with status checks. No more indecision if a code change has enough test coverage.</p>
+                <a href="" >Learn More</a>
+            </div>            
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <div class="beforefooter">
+        <div class="logofoot">
+            <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/codecov/codecov-circle.svg" alt="Company Logo">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">GDPR</a>
+                <a href="#">Data Processing Addendum</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">California Privacy Notice</a>
+            </div>
+            <p>© 2025 • SENTRY IS A REGISTERED TRADEMARK OF FUNCTIONAL SOFTWARE, INC.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navi").classList.toggle("navi-active");
+            // document.querySelector(".navbtn").classList.toggle("nav-active");
+        }
+        window.onload=function(){
+            document.querySelector(".closebtn").addEventListener("click",()=>{document.querySelector(".navi").classList.remove("navi-active");})
+            document.querySelector(".beforefooter").addEventListener("click",()=>{document.querySelector(".navi").classList.remove("navi-active");})
+            window.addEventListener("scroll", () => {
+                document.querySelector(".navi").classList.remove("navi-active");
+            });
+        }
+
+    </script>
+</body>
+</html>
