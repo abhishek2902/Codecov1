@@ -57,7 +57,7 @@
         <section class="hero">
             <div class="herocontvid">
                 <div class="herocontent">
-                    <h2>CoverCode:Beyond Coverage, Into Excellence.</h2>
+                    <h2>Code Coverage: Beyond Coverage; Into Excellence;</h2>
                     <p>Leading organizations worldwide place their trust in CoverCode for premier code quality tools and comprehensive reporting. Elevate your code quality and optimize your CI workflow with advanced code coverage insights, precise detection of flaky and failing tests, in-depth performance impact analysis, and a suite of powerful features designed to enhance efficiency and reliability.</p>
                     <div class="herobtn">
                         <button class="trybtn" onclick="window.location.href='/getstarted.html'">Try free</button>
@@ -87,7 +87,7 @@
             <g class="wave4">
                 <use xlink:href="#wave-path" x="50" y="6"></use>
             </g>
-        </svg> 
+        </svg>
     </div>
     <!-- hero section ends -->
 
@@ -316,29 +316,29 @@
 
 
 
-        // let lastScrollTop = 0;
-        // const header = document.querySelector(".na");
+        let lastScrollTop = 0;
+        const header = document.querySelector(".na");
 
-        // window.addEventListener("scroll", () => {
-        // let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        window.addEventListener("scroll", () => {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-        // if (scrollTop > lastScrollTop) {
-        //     // Scrolling down -> Hide header
-        //     header.classList.add("hidden");
-        // } else {
-        //     // Scrolling up -> Show header
-        //     header.classList.remove("hidden");
-        // }
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down -> Hide header
+            header.classList.add("hidden");
+        } else {
+            // Scrolling up -> Show header
+            header.classList.remove("hidden");
+        }
 
-        // if (scrollTop <80) {
-        //     header.classList.remove("hidden");
-        // }
-        // console.log(scrollTop)
+        if (scrollTop <80) {
+            header.classList.remove("hidden");
+        }
+        console.log(scrollTop)
 
-        // lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
-        // });
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
+        });
 
-
+        document.querySelector(".navi").classList.remove("navi-active");
 
     </script>
 </body>

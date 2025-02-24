@@ -32,7 +32,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     /* padding:15px 20px; */
-    padding:15px 20px 15px 40px;
+    padding:10px 20px 10px 40px;
     font-size: 15px;
     /* width: 1080px; */
     /* width: 80%; */
@@ -563,6 +563,8 @@ height: 500px;
 }
 .abtcont1{
     font-size: 18px;
+    display: flex;
+    flex-direction: row;
 }
 .aboutcontent{
     display: flex;
@@ -803,7 +805,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:15px 20px 15px 40px;
+        padding:10px 20px 10px 40px;
         font-size: 15px;
         /* width: 90%; */
         margin: auto;
@@ -823,15 +825,6 @@ footer {
     }
 }
 @media (max-width: 1310px) {
-    /* nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:20px 40px;
-        font-size: 15px;
-        width: 80%;
-        margin: auto;
-    } */
     .curved-design, .curved-designr {
         display: none;  /* Hides the left and right designs */
     }
@@ -868,7 +861,7 @@ footer {
         width: 100vw;
         margin-right: 0;
         /* padding: 15px 20px; */
-        padding:15px 20px 15px 20px;
+        padding:8px 20px 0px 20px;
     }
     .navbtn{
         visibility: hidden;
@@ -996,6 +989,21 @@ footer {
     .card {
         width: 80vw;
     }
+    .navi {
+        padding: 0px 5px;
+        border-radius: 0;
+    }
+    .navi a{
+        padding: 22px 20px;
+        font-size: 15px;
+    }
+    .closebtn {
+        top: -10px;
+        right: 5px;
+    }
+    nav{
+        padding:10px 0px 10px 20px;
+    }
 }
 
 
@@ -1082,12 +1090,11 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items:center ;
-    width: 800px;
-    margin-top: 50px;
+    width: 900px;
 }
 .features h2{
     font-size: 32px;
-    text-align: center;
+    text-align: start;
 }
 .features h1{
     font-size: 30px;
@@ -1095,13 +1102,15 @@ footer {
 
 .feacont{
     display: flex;
-    gap: 20px;
+    gap: 0px;
     margin-top: 100px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .feacont img{
     width: 350px;
+    height: 300px;
 }
 
 .feaconttext{
@@ -1110,7 +1119,8 @@ footer {
     justify-content: space-between;
     align-items:flex-start;
     width: 40%;
-    gap: 30px;
+    gap: 0px;
+    height: 200px;
 }
 .feaconttext a{
     text-decoration: none;
@@ -1123,38 +1133,89 @@ footer {
     body{
         overflow-x: hidden;
     }
+    /* Products Page */
     .features{
-        width: 80%;
-    }
-    .feacont{
+        margin: auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        margin-top: 100px;
-        margin: auto;
         justify-content: space-between;
+        align-items:center ;
+        width: 90vw;
     }
+    .features h2{
+        font-size: 32px;
+        text-align: center;
+        margin: auto;
+    }
+    .features h1{
+        font-size: 30px;
+    }
+
+    .feacont{
+        display: flex;
+        gap: 0px;
+        margin-top: 100px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feacont img{
+        width: 350px;
+        height: 300px;
+    }
+
     .feaconttext{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items:flex-start;
         width: 80%;
-        gap: 30px;
-    }
-    .feacont{
-        margin-top: 40px;
-        height: auto;
-    }
-    .feacont img{
-        width: 80vw;
-    }
-    .feacont2{
-        flex-direction: column-reverse
-    }
-    .features h2{
-        font-size: 25px;
+        gap: 5px;
+        height: 200px;
         text-align: center;
     }
-   
+    .feaconttext a{
+        text-decoration: none;
+        color:var(--secondary-color);
+        font-weight: 600;
+        margin: auto;
+    }
+    .feacont2{
+        flex-direction: column-reverse;
+    }
+        
+    
+}
+
+@media (max-width: 600px){
+    .feacont img{
+        width: 90vw;
+    }
+}
+
+
+
+/* get started */
+
+.getstarted{
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center ;
+    width: 1300px;
+    padding-bottom: 30px;
+    padding-top: 80px;
+}
+
+@media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .getstarted{
+        flex-direction: row;
+        width: 90vw;
+    }
 }
