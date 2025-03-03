@@ -50,80 +50,89 @@
         </div>
         <!-- nav ends -->
 
-    <section class="features">
-        <h1>Features</h1>
 
-        <div class="feacont ">
-            <div class="feaconttext">
-                <h2>Code Coverage</h2>
-                <p>Comprehensive and adaptable code coverage reporting with real-time workflow insights for any programming language.</p>
-                <a href="" >Learn More</a>
+   
+
+    <section class="inte">
+        <h1>Integration Codecoverage</h1>
+        
+        <div class="cont">
+            <h3>Languages</h3>
+            <div class="cont2">
+                <p>Ruby</p>
+                <p>Python</p>
             </div>
-            <img src="./public/images/fea1.png" alt="">
         </div>
 
-        <div class="feacont feacont2">
-            <img src="./public/images/fea2.png" alt="">
-            <div class="feaconttext">
-                <h2>Test Analytics</h2>
-                <p>Comprehensive test failure analysis and flaky test detection with in-depth insights to accelerate quality code merging and enhance CI performance.</p>
-                <a href="" >Learn More</a>
-            </div>            
-        </div>
-
-
-        <div class="feacont ">
-            <div class="feaconttext">
-                <h2>Bundle Analysis</h2>
-                <p>Block oversized JavaScript bundles from merging to maintain site performance. Receive PR alerts and monitor bundle size changes over time.</p>
-                <a href="" >Learn More</a>
+        <div class="cont">
+            <h3>Frameworks</h3>
+            <div class="cont2">
+                <p>Ruby on Rails</p>
+                <p>Python</p>
             </div>
-            <img src="./public/images/code4.png" alt="">
         </div>
-
-
-
-        <div class="feacont feacont2">
-            <img src="./public/images/fea4.png" alt="">
-            <div class="feaconttext">
-                <h2>Coverage Comparisons</h2>
-                <p>Coverage allows developers to compare code coverage between different commits, branches, or pull requests, helping teams identify coverage improvements or regressions before merging changes.</p>
-                <a href="" >Learn More</a>
-            </div>            
-        </div>
-
-
-
-        <div class="feacont ">
-            <div class="feaconttext">
-                <h2>Source Code Coverage</h2>
-                <p>Flexible and comprehensive code coverage reporting with real-time workflow insights for any programming language.</p>
-                <a href="" >Learn More</a>
-            </div>
-            <img src="./public/images/fea3.png" alt="">
-        </div>
-
-
-
-
-        <div class="feacont feacont2">
-            <img src="./public/images/fea5.png" alt="">
-            <div class="feaconttext">
-                <h2>Status Checks</h2>
-                <p>Prevent underperforming pull requests from merging using status checks, ensuring every code change meets sufficient test coverage without uncertainty.</p>
-                <a href="" >Learn More</a>
-            </div>            
-        </div>
-
-
     </section>
 
+    <section class="integration-section">
+        <h1>How to Integrate Our Application</h1>
+        
 
+        <div class="wrapper">
+            <div class="grid">
+                <div class="full-width">
+                    <div class="road-map-main">
+                        <div class="road-map-wrapper">
+                            <div class="road-map-circle">
+                                <span class="road-map-circle-text flex align-center justify-center">Step 1</span>
+                            </div>
+                            <br>
+                            <div class="road-map-card">
+                                <h4 class="card-head">Heading</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
+                            </div>
+                        </div>
+                        <div class="road-map-wrapper">
+                            <div class="road-map-circle">
+                                <span class="road-map-circle-text flex align-center justify-center">Step 2</span>
+                            </div>
+                            <br>
+                            <div class="road-map-card">
+                                <h4 class="card-head">Heading</h4>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text.</p>
+                            </div>
+                        </div>
+                        <div class="road-map-wrapper">
+                            <div class="road-map-circle">
+                                <span class="road-map-circle-text flex align-center justify-center">Step 3</span>
+                            </div>
+                            <br>
+                            <div class="road-map-card">
+                                <h4 class="card-head">Heading</h4>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing industry.</p>
+                            </div>
+                        </div>
+                        <div class="road-map-wrapper">
+                            <div class="road-map-circle">
+                                <span class="road-map-circle-text flex align-center justify-center">Step 4</span>
+                            </div>
+                            <br>
+                            <div class="road-map-card">
+                                <h4 class="card-head">Heading</h4>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </section>
 
 
     <div class="beforefooter">
         <div class="logofoot">
-            <!-- <img src="https://about.codecov.io/wp-content/themes/codecov/assets/brand/icons/codecov/codecov-circle.svg" alt="Company Logo"> -->
             <i class="fa-solid fa-plane-departure icon2"></i>
         </div>
     </div>
@@ -131,9 +140,6 @@
 
     <footer>
         <div class="footer-top">
-            <!-- <div class="logo">
-                <img src="logo.png" alt="Company Logo">
-            </div> -->
             <div class="footer-columns">
                 <div class="column">
                     <h3>PRODUCT</h3>
@@ -223,8 +229,7 @@
         if (scrollTop > lastScrollTop) {
             // Scrolling down -> Hide header
             header.classList.add("hidden");
-        } else {        document.querySelector(".navi").classList.remove("navi-active");
-
+        } else {
             // Scrolling up -> Show header
             header.classList.remove("hidden");
         }
@@ -235,14 +240,13 @@
         console.log(scrollTop)
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative values
-
-        document.querySelector(".navi").classList.remove("navi-active");
         });
 
-
+        document.querySelector(".navi").classList.remove("navi-active");
 
     </script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
